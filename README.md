@@ -1,4 +1,4 @@
-# Nome da Equipe: Oneclic
+# Nome da Equipe: META DAY
 
 ## Integrantes:
 - Luiz Fernando de Sena 
