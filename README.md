@@ -25,3 +25,6 @@
 -  O aplicato de conter um tela que motre todos os meses do ano, onde o usuário clica e verifica o calendário do mês selecionado e verifica quantas metas foram batidas no mês selecionado.
   
 -  Tela de calendário: O aplicativo deve fornecer um calendário interativo e intuitivo, integrado de forma transparente à experiência do usuário. Esse calendário não apenas acompanha o progresso do usuário, mas também permite que ele marque eventos importantes em sua linha do tempo pessoal. Além disso, o calendário deve ser facilmente acessível e navegável, permitindo ao usuário visualizar de forma clara e organizada sua agenda diária, semanal ou mensal.
+
+## Figma
+https://www.figma.com/file/D0YD1oz7CTbXQnR2ZkcVol/META-DAY?type=design&node-id=0-1&mode=design&t=Za8GBgTXqq8Gu1IL-0
