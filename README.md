@@ -18,7 +18,9 @@
 
 - Perfil: Local onde irá conter foto de perfil, informações pessoais, como nome, e-mail, telefone e senha cadastrados. Nesta tela terá um botão de edição de dados e opção para sair da conta.
   
-- Metas: A tela de metas vai fornecer aos usuários a capacidade de criar, visualizar e concluir suas metas pessoais, ele poderá criar metas de corrida, caminhada, metas de beber água, entre outras metas que podem ser adicionadas pelo usuário.
+- Metas: A tela de metas vai fornecer aos usuários a capacidade de visualizar e concluir suas metas pessoais, um campo de busca onde ele poderá visualizar as metas já concluidas, e um campo adicionar metas, onde ele será redirecionado para a tela "novas metas".
+
+- Novas metas: Nessa tela o usuário poderá criar novas metas, após criadas e salvas o usuário poderá visualizar essas novas metas, na tela de meta
 
 -  O aplicato de conter um tela que motre todos os meses do ano, onde o usuário clica e verifica o calendário do mês selecionado e verifica quantas metas foram batidas no mês selecionado.
   
