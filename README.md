@@ -20,4 +20,4 @@
 
 - O aplicativo deve oferecer feedback positivo e motivacional para incentivar os usuários a manterem-se comprometidos com suas metas. Através de mensagens personalizadas de encorajamento, conquistas desbloqueadas ao atingir marcos importantes e lembretes para realizar atividades físicas conforme programado.
 
-
+- O aplicativo deve fornecer um calendário interativo e intuitivo, integrado de forma transparente à experiência do usuário. Esse calendário não apenas acompanha o progresso do usuário, mas também permite que ele marque eventos importantes em sua linha do tempo pessoal. Além disso, o calendário deve ser facilmente acessível e navegável, permitindo ao usuário visualizar de forma clara e organizada sua agenda diária, semanal ou mensal.
