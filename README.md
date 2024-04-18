@@ -8,6 +8,8 @@
 - Celso Gabriel 
 
 ## Requisitos
+- Tela de login: O usuário vai ter a opção de se logar através de uma conta google ou pelo o e-mail, caso escolha pelo e-mail o usuário tera que informar seu e-mail cadastrado e sua senha
+
 - Cadastro do Usuário: onde será solicitado nome, telefone, e-mail, senha, confirmação de senha.
 
 - Perfil: Local onde irá conter foto de perfil, metas concluídas, informações pessoais, como nome, e-mail, telefone e senha cadastrados. Nesta tela terá um botão de edição de dados e opção para sair da conta.
