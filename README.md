@@ -12,7 +12,7 @@
 
 - Perfil: Local onde irá conter foto de perfil, metas concluídas, informações pessoais, como nome, e-mail, telefone e senha cadastrados. Nesta tela terá um botão de edição de dados e opção para sair da conta.
   
-- Implementar a funcionalidade para registrar automaticamente os dados de atividade física, como passos, distância percorrida, calorias queimadas e minutos de atividade, assim como os dados de sono, como tempo de sono, qualidade do sono, etc
+- Metas: A tela de metas vai fornecer aos usuários a capacidade de criar, visualizar e concluir suas metas pessoais, ele poderá criar metas de corrida, caminhada, metas de beber água, entre outras metas que podem ser adicionadas pelo usuário.
   
 - Definição de Metas Personalizadas: O app deve permitir que os usuários definam suas metas personalizadas tendo como base em seus objetivos individuais, como perda de peso, ganho de massa muscular, melhoria da resistência entre outros. Essas metas devem ser específicas, mensuráveis, alcançáveis, relevantes e com prazo determinado.
 
