@@ -29,4 +29,4 @@
 ## Figma
 - https://www.figma.com/file/D0YD1oz7CTbXQnR2ZkcVol/META-DAY?type=design&node-id=0-1&mode=design&t=Za8GBgTXqq8Gu1IL-0
 ## Slide
-[Micro-Frontends-Uma-abordagem-modular-para-o-desenvolvimento-de-interfaces-de-usuario (1).pdf](https://github.com/LuizFernandoo9/META-DAY/files/15031185/Micro-Frontends-Uma-abordagem-modular-para-o-desenvolvimento-de-interfaces-de-usuario.1.pdf)
+- [Micro-Frontends-Uma-abordagem-modular-para-o-desenvolvimento-de-interfaces-de-usuario (1).pdf](https://github.com/LuizFernandoo9/META-DAY/files/15031185/Micro-Frontends-Uma-abordagem-modular-para-o-desenvolvimento-de-interfaces-de-usuario.1.pdf)
