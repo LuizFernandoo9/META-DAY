@@ -4,13 +4,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.meses.R
 
     class MesesActivity : AppCompatActivity() {
 
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            setContentView(R.layout.`meses.xml`)
+            setContentView(R.layout.activity_meses)
 
             val button1 = findViewById<Button>(R.id.button1)
             val button2 = findViewById<Button>(R.id.button2)
@@ -74,9 +73,5 @@ import com.example.meses.R
             }
         }
     }
-
-}
-
-
 
 
