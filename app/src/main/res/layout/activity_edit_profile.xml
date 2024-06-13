@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/text_editarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EditarConta"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintBottom_toBottomOf="@id/containerComponents"
+        />
+
+    <TextView
+        android:id="@+id/arrow_backSalve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:drawablePadding="8dp"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents"
+        app:layout_constraintBottom_toBottomOf="@id/containerComponents"
+        />
+    <EditText
+        android:id="@+id/salve_nome"
+        style="@style/edit_text"
+        android:ellipsize="start"
+        android:hint="Nome"
+        android:drawableRight="@drawable/baseline_arrow_forward"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents"
+
+        />
+
+    <EditText
+        android:id="@+id/salve_email"
+        style="@style/edit_text"
+        android:hint="Email"
+        android:ellipsize="start"
+        android:drawableRight="@drawable/baseline_arrow_forward"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/salve_nome"
+        app:layout_constraintEnd_toEndOf="@+id/salve_nome"
+        app:layout_constraintTop_toBottomOf="@id/salve_nome"
+        />
+
+    <EditText
+        android:id="@+id/salve_telefone"
+        style="@style/edit_text"
+        android:hint="Telefone"
+        android:ellipsize="start"
+        android:drawableRight="@drawable/baseline_arrow_forward"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/salve_email"
+        app:layout_constraintEnd_toEndOf="@+id/salve_email"
+        app:layout_constraintTop_toBottomOf="@id/salve_email"
+        />
+    <EditText
+        android:id="@+id/salve_senha"
+        style="@style/edit_text"
+        android:ellipsize="start"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/salve_telefone"
+        app:layout_constraintEnd_toEndOf="@+id/salve_telefone"
+        app:layout_constraintTop_toBottomOf="@id/salve_telefone"/>
+
+    <EditText
+        android:id="@+id/salve_confirmeSenha"
+        style="@style/edit_text"
+        android:ellipsize="start"
+        android:hint="Confirme sua Senha"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/salve_senha"
+        app:layout_constraintEnd_toEndOf="@+id/salve_senha"
+        app:layout_constraintTop_toBottomOf="@id/salve_senha"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_salvar"
+        style="@style/Button"
+        android:text="@string/salvar"
+        app:layout_constraintStart_toStartOf="@+id/salve_confirmeSenha"
+        app:layout_constraintEnd_toEndOf="@+id/salve_confirmeSenha"
+        app:layout_constraintTop_toBottomOf="@id/salve_confirmeSenha"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "156099080986",
+    "project_id": "meta-day-26140",
+    "storage_bucket": "meta-day-26140.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156099080986:android:5ee9daf2f778ccf9c8f2a3",
+        "android_client_info": {
+          "package_name": "com.fnr.meta_day_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX2pvFqC_vtB-Db99oYVJhC68MeW48Cww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">META_DAY-app</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="textCadastro">Cadastro</string>
+    <string name="Perfil">Perfil</string>
+    <string name="InfoPessoais">Informações Pessoais</string>
+    <string name="sairConta">Sair da minha conta</string>
+    <string name="editar">Editar</string>
+    <string name="simpleName">Luiz Fernando</string>
+    <string name="EditarConta">Editar Conta</string>
+    <string name="salvar">Salvar</string>
 </resources>

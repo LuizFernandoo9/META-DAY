@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/text_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Perfil"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintBottom_toBottomOf="@id/containerComponents"
+        />
+
+    <TextView
+        android:id="@+id/arrow_backPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:drawablePadding="8dp"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents"
+        app:layout_constraintBottom_toBottomOf="@id/containerComponents"
+
+        />
+
+    <View
+        android:id="@+id/containerUser"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@drawable/container_user"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/arrow_backPerfil"
+        app:layout_constraintBottom_toBottomOf="@id/containerComponents"
+
+        />
+    <TextView
+        android:id="@+id/simple_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simpleName"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintTop_toTopOf="@id/containerUser"
+        app:layout_constraintBottom_toBottomOf="@id/containerUser"
+        app:layout_constraintStart_toEndOf="@id/containerUser"
+
+
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:src="@drawable/baseline_blind_24"
+        app:layout_constraintStart_toStartOf="@id/containerUser"
+        app:layout_constraintEnd_toEndOf="@id/containerUser"
+        app:layout_constraintTop_toTopOf="@id/containerUser"
+        app:layout_constraintBottom_toBottomOf="@id/containerUser"
+        />
+
+    <TextView
+        android:id="@+id/text_infoPessoais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/InfoPessoais"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/containerUser"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+
+        />
+    <EditText
+        android:id="@+id/user_nome"
+        style="@style/edit_text"
+        android:ellipsize="start"
+        android:text="Nome"
+        android:drawableRight="@drawable/baseline_arrow_forward"
+        app:layout_constraintStart_toStartOf="@+id/text_infoPessoais"
+        app:layout_constraintEnd_toEndOf="@+id/text_infoPessoais"
+        app:layout_constraintTop_toBottomOf="@id/text_infoPessoais"/>
+
+    <EditText
+        android:id="@+id/user_email"
+        style="@style/edit_text"
+        android:ellipsize="start"
+        android:text="Email"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/baseline_arrow_forward"
+        app:layout_constraintStart_toStartOf="@+id/user_nome"
+        app:layout_constraintEnd_toEndOf="@+id/user_nome"
+        app:layout_constraintTop_toBottomOf="@id/user_nome"/>
+
+    <EditText
+        android:id="@+id/user_telefone"
+        style="@style/edit_text"
+        android:ellipsize="start"
+        android:text="Telefone"
+        android:inputType="phone"
+        android:drawableRight="@drawable/baseline_arrow_forward"
+        app:layout_constraintStart_toStartOf="@+id/user_email"
+        app:layout_constraintEnd_toEndOf="@+id/user_email"
+        app:layout_constraintTop_toBottomOf="@id/user_email"/>
+
+    <EditText
+        android:id="@+id/user_senha"
+        style="@style/edit_text"
+        android:ellipsize="start"
+        android:text="Senha"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/baseline_arrow_forward"
+        app:layout_constraintStart_toStartOf="@+id/user_telefone"
+        app:layout_constraintEnd_toEndOf="@+id/user_telefone"
+        app:layout_constraintTop_toBottomOf="@id/user_telefone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_sairConta"
+        style="@style/Button2"
+        android:text="@string/sairConta"
+        app:layout_constraintStart_toStartOf="@+id/user_senha"
+        app:layout_constraintEnd_toEndOf="@+id/user_senha"
+        app:layout_constraintTop_toBottomOf="@id/user_senha"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_editar"
+        style="@style/Button"
+        android:text="@string/editar"
+        app:layout_constraintStart_toStartOf="@+id/bt_sairConta"
+        app:layout_constraintEnd_toEndOf="@+id/bt_sairConta"
+        app:layout_constraintTop_toBottomOf="@id/bt_sairConta"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
