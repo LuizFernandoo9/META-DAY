@@ -5,15 +5,60 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fundo"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/entrarGoogle"
+        android:layout_width="334dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="462dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/verdeBT"
+        android:drawableRight="@drawable/googlelogo"
+        android:text="@string/logarGoogle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/entrarEmail"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/entrarEmail"
+        android:layout_width="334dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/verdeBT"
+        android:drawableRight="@drawable/emaillogo"
+        android:text="@string/logarEmail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/esqueciSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrarGoogle" />
+
+    <Button
+        android:id="@+id/telaRegistro"
+        android:layout_width="334dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/verdeBT"
+        android:text="@string/criarConta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esqueciSenha" />
+
+    <Button
+        android:id="@+id/esqueciSenha"
+        android:layout_width="334dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/verdeBT"
+        android:text="@string/esqueciSenha"
+        app:layout_constraintBottom_toTopOf="@+id/telaRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrarEmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>

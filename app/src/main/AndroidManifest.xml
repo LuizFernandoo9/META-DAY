@@ -20,10 +20,16 @@
             android:name=".ProfileActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ResgistrationActivity"
             android:exported="true" />
         <activity
-            android:name=".ResgistrationActivity"
+            android:name=".telaLoginEmail"
+            android:exported="true" />
+        <activity
+            android:name=".recuperarSenha"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

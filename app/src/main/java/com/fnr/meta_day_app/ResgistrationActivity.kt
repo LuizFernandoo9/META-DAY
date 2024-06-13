@@ -80,7 +80,7 @@ class ResgistrationActivity : AppCompatActivity() {
                                     .addOnSuccessListener {
                                         Toast.makeText(this, "Usuário registrado com sucesso!", Toast.LENGTH_SHORT).show()
                                         // Navegar para MainActivity
-                                        val intent = Intent(this, MainActivity::class.java)
+                                        val intent = Intent(this, telaLoginEmail::class.java)
                                         finish()
                                         startActivity(intent)
                                     }
@@ -106,7 +106,7 @@ class ResgistrationActivity : AppCompatActivity() {
             }
             binding.arrowBackRegistrar.setOnClickListener {
                 //lógica para mandar para tela inicial(rafa)
-                val intent = Intent(this, ProfileActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 finish()
                 startActivity(intent)
             }
