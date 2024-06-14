@@ -74,6 +74,7 @@ class ProfileActivity : AppCompatActivity() {
                     userNome.setText(document.getString("nome"))
                     userTelefone.setText(document.getString("telefone"))
                     userEmail.setText(document.getString("email"))
+                    userSenha.setText(document.getString("senha"))
                 } else {
                     Toast.makeText(this, "Documento não encontrado", Toast.LENGTH_SHORT).show()
                 }
