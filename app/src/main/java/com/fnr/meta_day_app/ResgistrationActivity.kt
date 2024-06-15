@@ -53,34 +53,34 @@ class ResgistrationActivity : AppCompatActivity() {
         db = FirebaseFirestore.getInstance()
 
         binding.btCadastrar.setOnClickListener {
-            binding.btCadastrar.setOnClickListener {
-                // Validação dos campos de entrada
-                val nome = editNome.text.toString().trim()
-                val telefone = editTelefone.text.toString().trim()
-                val email = editEmail.text.toString().trim()
-                val senha = editSenha.text.toString().trim()
-                val confirmeSenha = editConfirmeSenha.text.toString().trim()
+            // Validação dos campos de entrada
+            val nome = editNome.text.toString().trim()
+            val telefone = editTelefone.text.toString().trim()
+            val email = editEmail.text.toString().trim()
+            val senha = editSenha.text.toString().trim()
+            val confirmeSenha = editConfirmeSenha.text.toString().trim()
 
-                // Verificação se todos os campos estão preenchidos corretamente
-                if (nome.isNotEmpty() && telefone.isNotEmpty() && email.isNotEmpty() && senha.isNotEmpty() && senha == confirmeSenha) {
-                    progressBar.visibility = View.VISIBLE
+            // Verificação se todos os campos estão preenchidos corretamente
+            if (nome.isNotEmpty() && telefone.isNotEmpty() && email.isNotEmpty() && senha.isNotEmpty() && senha == confirmeSenha) {
+                progressBar.visibility = View.VISIBLE
 
-                    auth.createUserWithEmailAndPassword(email, senha).addOnCompleteListener(this) { task ->
-                        progressBar.visibility = View.INVISIBLE
-                        if (task.isSuccessful) {
-                            val userId = auth.currentUser?.uid
-                            val user = hashMapOf(
-                                "nome" to nome,
-                                "telefone" to telefone,
-                                "email" to email
-                            )
+                auth.createUserWithEmailAndPassword(email, senha).addOnCompleteListener(this) { task ->
+                    progressBar.visibility = View.INVISIBLE
+                    if (task.isSuccessful) {
+                        val userId = auth.currentUser?.uid
+                        val user = hashMapOf(
+                            "nome" to nome,
+                            "telefone" to telefone,
+                            "email" to email,
+                            "senha" to senha
+                           )
                             if (userId != null) {
                                 db.collection("users").document(userId)
                                     .set(user)
                                     .addOnSuccessListener {
                                         Toast.makeText(this, "Usuário registrado com sucesso!", Toast.LENGTH_SHORT).show()
                                         // Navegar para MainActivity
-                                        val intent = Intent(this, MainActivity::class.java)
+                                        val intent = Intent(this, telaLoginEmail::class.java)
                                         finish()
                                         startActivity(intent)
                                     }
@@ -106,7 +106,7 @@ class ResgistrationActivity : AppCompatActivity() {
             }
             binding.arrowBackRegistrar.setOnClickListener {
                 //lógica para mandar para tela inicial(rafa)
-                val intent = Intent(this, ProfileActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 finish()
                 startActivity(intent)
             }
@@ -131,7 +131,7 @@ class ResgistrationActivity : AppCompatActivity() {
             editEmail.addTextChangedListener(textWatcher)
             editSenha.addTextChangedListener(textWatcher)
             editConfirmeSenha.addTextChangedListener(textWatcher)
-        }
+
 
     }
 

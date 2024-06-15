@@ -9,4 +9,17 @@
     <string name="simpleName">Luiz Fernando</string>
     <string name="EditarConta">Editar Conta</string>
     <string name="salvar">Salvar</string>
+    <string name="logarGoogle">Entrar com o Google</string>
+    <string name="logarEmail">Entrar com E-mail</string>
+    <string name="criarConta">Criar conta</string>
+    <string name="entrar">Entrar</string>
+    <string name="senha">Senha</string>
+    <string name="email">E-mail</string>
+    <string name="esqueciSenha">Esqueci minha senha</string>
+    <string name="confirmarEmail">Confirmar e-mail</string>
+    <string name="enviar">Enviar</string>
+
+
+
+
 </resources>
