@@ -53,14 +53,14 @@ class ResgistrationActivity : AppCompatActivity() {
         db = FirebaseFirestore.getInstance()
 
         binding.btCadastrar.setOnClickListener {
-            // Validação dos campos de entrada
+
             val nome = editNome.text.toString().trim()
             val telefone = editTelefone.text.toString().trim()
             val email = editEmail.text.toString().trim()
             val senha = editSenha.text.toString().trim()
             val confirmeSenha = editConfirmeSenha.text.toString().trim()
 
-            // Verificação se todos os campos estão preenchidos corretamente
+
             if (nome.isNotEmpty() && telefone.isNotEmpty() && email.isNotEmpty() && senha.isNotEmpty() && senha == confirmeSenha) {
                 progressBar.visibility = View.VISIBLE
 
@@ -74,19 +74,19 @@ class ResgistrationActivity : AppCompatActivity() {
                             "email" to email,
                             "senha" to senha
                            )
-                            if (userId != null) {
-                                db.collection("users").document(userId)
-                                    .set(user)
-                                    .addOnSuccessListener {
-                                        Toast.makeText(this, "Usuário registrado com sucesso!", Toast.LENGTH_SHORT).show()
-                                        // Navegar para MainActivity
-                                        val intent = Intent(this, telaLoginEmail::class.java)
-                                        finish()
-                                        startActivity(intent)
-                                    }
-                                    .addOnFailureListener { e ->
-                                        Toast.makeText(this, "Falha ao salvar dados: ${e.message}", Toast.LENGTH_SHORT).show()
-                                    }
+                        if (userId != null) {
+                            db.collection("users").document(userId)
+                                .set(user)
+                                .addOnSuccessListener {
+                                    Toast.makeText(this, "Usuário registrado com sucesso!", Toast.LENGTH_SHORT).show()
+                                    // Navegar para MainActivity
+                                    val intent = Intent(this, telaLoginEmail::class.java)
+                                    finish()
+                                    startActivity(intent)
+                                }
+                                .addOnFailureListener { e ->
+                                    Toast.makeText(this, "Falha ao salvar dados: ${e.message}", Toast.LENGTH_SHORT).show()
+                                }
                                 } else {
                                     Toast.makeText(this, "Erro ao obter ID do usuário.", Toast.LENGTH_SHORT).show()
                                 }

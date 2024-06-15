@@ -17,6 +17,15 @@
             android:exported="true"
             android:theme="@style/Theme.META_DAYapp" />
         <activity
+            android:name=".MesesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NovasMetasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MetasActivity"
+            android:exported="true" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="true" />
         <activity

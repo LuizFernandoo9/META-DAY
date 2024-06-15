@@ -47,10 +47,10 @@ class ProfileActivity : AppCompatActivity() {
         loadUserData()
 
         binding.arrowBackPerfil.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MesesActivity::class.java)
             finish()
             startActivity(intent)
-            //logica ir para tela principal
+
         }
         binding.btEditar.setOnClickListener{
             val intent = Intent(this, EditProfileActivity::class.java)
@@ -62,7 +62,7 @@ class ProfileActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             finish()
             startActivity(intent)
-            //logica ir para tela de login
+
         }
     }
     private fun loadUserData() {
